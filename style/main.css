@@ -1,0 +1,46 @@
+header,footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    color: white;
+}
+
+header ul,footer ul{
+    list-style: none;
+    display: flex;
+    margin-top:16px;
+}
+
+header ul li,footer ul li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header ul li a,footer ul li a{
+    color: white;
+    padding: 20px;
+}
+
+header ul li a:focus,header ul li a:hover,footer ul li a:focus,footer ul li a:hover{
+    color: white;
+    text-decoration: none;
+    background-color: #E0E0E020;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(90vh - 192px);
+}
+
+main table td {
+    padding: 8px;
+}
