@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-    if(document.location.pathname == "/login.html"){
+    if(document.location.pathname.includes("/login.html")){
         if(readCookie("user")!="" && sessionExists(readCookie("user")))
             location.href="panel.html";
         else{
@@ -36,7 +36,7 @@ $(document).ready(function(){
                 }
             });
         }  
-    }else if (document.location.pathname == "/" || document.location.pathname == "/index.html"){
+    }else if (document.location.pathname == "quotes/" || document.location.pathname.includes("/index.html"){
         $.ajax({
             url: "https://script.google.com/macros/s/AKfycbwrn62-lhHReM5eZxnBDfThO5DPmb0mllq_XSQP0TRA3eI-cWnR/exec", 
             type:"POST",
